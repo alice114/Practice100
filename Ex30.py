@@ -31,4 +31,3 @@ if __name__ == '__main__':
     print(isPalindrome(1))
 
 
-# for int compare

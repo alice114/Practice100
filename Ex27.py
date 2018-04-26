@@ -1,7 +1,8 @@
 # 题目：利用递归函数调用方式，将所输入的5个字符，以相反顺序打印出来。
 
-#问题：怎么实现循环输入？但程序不结束，
 
+
+# method 1：？print none? 5crwqNone  ?怎么实现循环输入？但程序不结束
 for i in range(1):
     i = input("Please input:")
     l = len(i)
@@ -19,7 +20,7 @@ for i in range(1):
         print(output(i,l))
 
 
-
+# method 2：
 def desc_output(s):
     if(len(s) > 0):
         print(s[-1])            # python 负数下标
@@ -28,9 +29,11 @@ def desc_output(s):
 s = input('Input a string:')
 desc_output(s)
 
-t=[]
+
+# method 3： list append, remove
 
 def stringoutput(s):
+    t = []
     l = list(s)
     while(len(s)>0):
         t.append(s[-1])
@@ -40,3 +43,4 @@ def stringoutput(s):
 if __name__ == '__main__':
     s = input("input string")
     stringoutput(s)
+
